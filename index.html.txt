@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional - Angie Reina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .gradient-header {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-tag {
+            background: #e2e8f0;
+            transition: background 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: #cbd5e1;
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: white; }
+            .shadow-lg { box-shadow: none; }
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header Principal -->
+    <header class="gradient-header text-white py-12 px-6 shadow-xl">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold tracking-tight">ANGIE KATERINE REINA GRANADA</h1>
+                <p class="text-blue-300 text-xl mt-2 font-medium uppercase tracking-widest">Especialista en Atención al Cliente y Servicios</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6 text-sm">
+                    <span class="flex items-center gap-2"><i class="fas fa-location-dot"></i> Zaragoza, España</span>
+                    <a href="tel:643195417" class="flex items-center gap-2 hover:text-blue-300 transition"><i class="fas fa-phone"></i> 643 195 417</a>
+                    <a href="mailto:reinagranadaa@gmail.com" class="flex items-center gap-2 hover:text-blue-300 transition"><i class="fas fa-envelope"></i> reinagranadaa@gmail.com</a>
+                </div>
+            </div>
+            <button onclick="window.print()" class="no-print mt-8 md:mt-0 bg-white text-slate-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-100 transition shadow-lg">
+                <i class="fas fa-download mr-2"></i> Descargar PDF
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Columna Izquierda: Perfil y Habilidades -->
+        <aside class="space-y-8">
+            <section>
+                <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-2 mb-4">PERFIL</h2>
+                <p class="text-slate-600 leading-relaxed text-sm">
+                    Profesional polivalente con una trayectoria consolidada en la gestión de servicios y atención directa al público. Experta en optimizar procesos operativos en puntos de venta y entornos de hostelería. Mi enfoque se centra en la excelencia del servicio, la resolución proactiva de conflictos y la mejora continua del entorno laboral mediante el trabajo en equipo y la autogestión eficaz bajo presión.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-2 mb-4">HABILIDADES</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Liderazgo Empático</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Gestión de Stock</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Resolución de Conflictos</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Cierre de Caja</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Control de Calidad</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Comunicación Asertiva</span>
+                    <span class="skill-tag px-3 py-1 rounded-md text-xs font-semibold">Adaptabilidad</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-2 mb-4">EXTRAS</h2>
+                <ul class="text-sm space-y-2 text-slate-600">
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> NIE Disponible</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Incorporación Inmediata</li>
+                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Flexibilidad Horaria</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Columna Derecha: Experiencia y Educación -->
+        <div class="lg:col-span-2 space-y-10">
+            
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <i class="fas fa-briefcase text-blue-600"></i> EXPERIENCIA PROFESIONAL
+                </h2>
+
+                <div class="space-y-8">
+                    <!-- Trabajo 1 -->
+                    <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-slate-800">Especialista en Limpieza y Mantenimiento Técnico</h3>
+                            <span class="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">2022 - 2023</span>
+                        </div>
+                        <p class="text-blue-600 text-sm font-semibold mb-3">Salmerón Gourmet | Zaragoza</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Ejecución de protocolos de desinfección profunda en áreas de manipulación de alimentos, garantizando el cumplimiento estricto de las normativas de seguridad e higiene (APPCC).</li>
+                            <li>Gestión eficiente del inventario de suministros químicos y materiales, reduciendo mermas y optimizando el uso de recursos.</li>
+                            <li>Supervisión de la imagen del establecimiento para asegurar una experiencia premium al cliente desde el primer contacto visual.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Trabajo 2 -->
+                    <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-slate-800">Gestora de Ventas y Atención en Punto Crítico</h3>
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2 py-1 rounded">2021 - 2021</span>
+                        </div>
+                        <p class="text-blue-600 text-sm font-semibold mb-3">Centro Comercial Valdebernardo | Madrid</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Maximización de ventas en stands de tecnología y accesorios mediante técnicas de venta consultiva y asesoramiento personalizado.</li>
+                            <li>Responsable única de la operatividad del punto de venta: apertura, cierre, arqueo de caja y reporte diario de objetivos.</li>
+                            <li>Control exhaustivo de stock físico y digital, detectando necesidades de reposición para evitar roturas de inventario.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Trabajo 3 -->
+                    <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-slate-800">Cajera y Responsable de Logística de Tienda</h3>
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2 py-1 rounded">2020 - 2020</span>
+                        </div>
+                        <p class="text-blue-600 text-sm font-semibold mb-3">Master GIFT Import S.L.</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Gestión integral de transacciones comerciales, manejo de diversos medios de pago y prevención de fraude en caja.</li>
+                            <li>Coordinación de la logística de entrada de mercancía: descarga de camiones pesados y organización volumétrica en almacén.</li>
+                            <li>Merchandising visual: reposición estratégica de productos según demanda para incentivar la compra por impulso.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Trabajo 4 -->
+                    <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-slate-800">Auxiliar de Operaciones de Cocina y Sala</h3>
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2 py-1 rounded">2019 - 2019</span>
+                        </div>
+                        <p class="text-blue-600 text-sm font-semibold mb-3">Restaurante El Samán</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Asistencia técnica en la *mise en place* (preparación previa) y elaboración de platos fríos/calientes bajo estándares de alta rotación.</li>
+                            <li>Optimización de los tiempos de servicio en sala y barra durante horas punta, manteniendo un trato cálido y profesional.</li>
+                            <li>Mantenimiento proactivo de la cadena de limpieza en maquinaria y menaje de cocina.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <i class="fas fa-graduation-cap text-blue-600"></i> FORMACIÓN
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-slate-800">Educación Media / Graduado Escolar</h3>
+                    <p class="text-slate-500 text-sm">Institución Educativa La Presentación / Liceo Gabriela Mistral</p>
+                    <p class="text-blue-600 text-xs mt-1 font-bold">Promoción 2010 - 2015</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="no-print bg-slate-100 py-8 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">Angie Katerine Reina Granada &copy; 2024</p>
+            <div id="contact-feedback" class="mt-4 hidden text-green-600 font-bold text-sm italic">
+                Copiado al portapapeles
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Función para simular interactividad de copia de email al hacer click
+        document.querySelector('a[href^="mailto:"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = this.textContent.trim();
+            const el = document.createElement('textarea');
+            el.value = email;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            
+            const feedback = document.getElementById('contact-feedback');
+            feedback.classList.remove('hidden');
+            setTimeout(() => feedback.classList.add('hidden'), 2000);
+        });
+
+        // Animación simple de entrada para las tarjetas
+        window.addEventListener('load', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.5s ease-out ' + (index * 0.1) + 's';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
